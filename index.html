@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous">
+    <!-- CDN of FontAwsome -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Contacts</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">
+            <div class="header">
+                <i class="fa-solid fa-address-book text-info"></i>
+                My <span class="text-info">Contact</span> List
+            </div>
+        </h1>
+
+        <form class="mb-3 form-group">
+            <div class="mb-3 mt-3">
+                <label for="contact_name" class="form-label">Contact Name</label>
+                <input type="text" class="form-control" id="contact_name" placeholder="Enter the Contact Name..">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="contact_number" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contact_number" placeholder="Enter the Contact Number..">
+            </div>
+            <input type="submit" class="btn btn-info text-white" style="font-size: 1rem;" value="Add Contact">
+        </form>
+
+        <div>
+            <label for="filter_input" class="form-label">Search A Contact</label>
+            <input type="text" class="form-control" id="filter_input" placeholder="Search For A Contact..">
+        </div>
+
+        <ul class="list-group list-group-flush mt-3" id="names">
+
+        </ul>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
